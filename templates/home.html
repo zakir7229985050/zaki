@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Home - EduPlatform{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center py-5 bg-white rounded shadow">
+    <h1 class="display-4">Welcome to EduPlatform</h1>
+    <p class="lead">Professional teaching platform for students, teachers, and admins.</p>
+    <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg me-3">Get Started</a>
+    <a href="{{ url_for('login') }}" class="btn btn-outline-primary btn-lg">Login</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card course-card">
+            <div class="card-body text-center">
+                <h5>Students</h5>
+                <p>Browse & enroll in courses, watch videos, download notes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card course-card">
+            <div class="card-body text-center">
+                <h5>Teachers</h5>
+                <p>Upload lectures and materials.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card course-card">
+            <div class="card-body text-center">
+                <h5>Admins</h5>
+                <p>Manage everything.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
